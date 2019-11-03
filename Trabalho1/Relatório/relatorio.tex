@@ -1,0 +1,254 @@
+ss{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{courier}
+\usepackage{minted}
+\usepackage{anysize}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{float}
+\marginsize {2 cm} {2 cm} {2 cm} {2 cm} 
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\begin{figure}[H] % Esse H faz com que a figura fique exatamente no lugar onde aparece no codigo
+    \centering
+    \includegraphics[height=120pt]{./FotosAuxiliares/logo.jpeg}
+\end{figure}
+{\large UNIVERSIDADE FEDERAL DO RIO DE JANEIRO} \\[2.5cm]
+{\large Amanda Aparecida Cordeiro Lucio, 118043013} \\[20pt]
+{\large Breno Castilho Santos, 118118054} \\[20pt]
+{\large Pedro Maciel Xavier, 116023847} \\[2.5cm]
+{\Huge Relatório do Primeiro Trabalho} \\[20pt]
+{\large Unidade Lógica e Aritmética} \\[2.5cm]
+{\large 11 de outubro de 2019}
+\end{center}
+\end{titlepage}
+
+\section{Introdução}
+A  Unidade   Lógica   Aritmética   (ULA), ou ALU é uma rede combinacional que efetua uma função para suas entradas por meio de operações lógicas e aritméticas. A mesma é um dos principais constituintes do sistema central dos computadores e da maioria dos sistema digitais. A ULA foi proposta pelo matemático John von Neumann em 1946. Desde então o desenvolvimento destas tem sido de vital importância para o aceleramento do processamento de dados e a realização de cálculos matemáticos mais rapidamente.
+O objetivo do trabalho estabeleceu-se na implementação de uma unidade à partir do VHDL utilizando como programa o ISE. 
+\section{Modo de uso} 
+\begin{figure}[H] % Esse H faz com que a figura fique exatamente no lugar onde aparece no codigo
+    \centering
+    \includegraphics[height=125pt]{./FotosAuxiliares/Placa1.png}
+    \includegraphics[height=125pt]{./FotosAuxiliares/Placa.png}
+\end{figure}
+
+
+\subsection{Switches para escolher valor das entradas}
+
+\subsection{ Botoes utilizados para definir o "Sentido da entrada" }
+    \subsection*{Botão Sul usado para definir que o valor dos Switches serão a operação }
+    \subsection*{Botão Leste usado para definir que o valor dos Switches serão a entrada B}
+    \subsection*{Botão Oeste usado para definir que o valor dos Switches serão a entrada A }
+
+\subsection{LEDs de exibição -- de 2 em 2 segundos exibira A,B,OP, Resultado}
+
+
+\section{Implementações}    
+    \subsection{Funções implementadas}
+    
+        \subsubsection*{Funções Lógicas}
+        
+        As funções lógicas implementadas são as usuais ($\wedge$, $\vee$, $\neg$, $\oplus$) aplicadas bit-a-bit sobre o vetor binário de entrada.
+        
+        \begin{itemize}
+            \item [] \hspace{10pt} \texttt{0000 : AND}
+            \item [] \hspace{10pt} \texttt{0001 : OR}
+            \item [] \hspace{10pt} \texttt{0010 : NOT}\footnotemark
+            \item [] \hspace{10pt} \texttt{0011 : XOR}
+        \end{itemize}
+        
+        As mesmas foram efetivadas a partir de comandos do próprio ISE. Primeiramente criou-se a entidade alulogic \textbf{(Apêndice 7.1)}. Estabelecendo dois vetores de entrada e um de saída para os valores e resultado. Além disso, inseriu-se um vetor de 4 bits operador que possuí como função a seleção da operação lógica a ser realizada.
+        A escrita do código prosseguiu à partir de definições de cases para o \textbf{op}. Desta forma, definindo a operação a ser realizada à partir do valor de entrada. 
+        
+        \subsubsection*{Funções Aritméticas}
+        As funções aritméticas também são as comuns ($+$, $-$, $\times$) e contam também com o cálculo do complemento de 2 (\texttt{C2}).
+        \begin{itemize}
+            \item [] \hspace{10pt} \texttt{0100 : ADD}
+            \item [] \hspace{10pt} \texttt{0101 : SUB}
+            \item [] \hspace{10pt} \texttt{0110 : MUL}
+            \item [] \hspace{10pt} \texttt{0111 : C2}\footnotemark[\value{footnote}]
+        \end{itemize}
+        \footnotetext{Essas operações só se aplicam ao primeiro operando definido.}
+
+        \textbf{Somador}\\
+        
+        A primeira o operação a ser construída na ULA foi a \textbf{soma}. Observe que por meio de análise lógica percebemos que a soma e nada mais que o resultado de um xor de suas parcelas. Contudo, como se trata de um vetor não basta considerarmos o xor, precisamos considerar o carry de saídas e de entradas.
+        
+        Inicialmente, realizamos um port map do circuito \textbf{(Apêndice 7.2)}. Isso é realizado levando em consideração a necessidade de três vetores que representem as \textbf{parcelas} e a \textbf{soma} e dois outros que representem o \textbf{carry inicial} e a ocorrência de um \textbf{overflow}. O \textbf{signal carry} declarado dentro da arquitetura será um vetor, tendo em vista que cada casa decimal receberá um "vai um" diferente.\\
+        
+        \textbf{Complemento de 2}\\
+        
+        Influenciando-se pela próxima função da ULA, a subtração, foi criada uma operação intermediária, o \textbf{complemento de 2}. \textbf{(Apêndice 7.3)} Para isso bastou a inserção de dois fluxos vetoriais no Port Map, um de entrada e outro de saída e o conhecimento de que o complemento de 2 é calculado através da \textbf{inversão} e \textbf{soma de mais de 1} (realizada por meio do componente somador já criado).\\
+        
+        \textbf{Subtrator}\\
+
+        Utilizando do complemento de 2 e somador como componente inicia-se a construção do \textbf{subtrator}. Isso, pois basta consideramos que a subtração é a soma de um número ao complemento de 2 outro, que se encontra com módulo negativo. Assim como no caso do somador fazemos um Port Map com entradas para o minuendo e subtraendo e uma saída para o resultado.\textbf{ (Apêndice 7.4)} Além disso consideramos o carry out e overflow.
+        
+        Dentro da arquitetura são criados os sinais que serão mapeados as portas do complemento de 2 (\textbf{c2b}) e do somador (d\_co e d\_ov). Sendo assim, a entrada b do subtrator é convertida para complemento de 2 e se torna c2b e logo em seguida é somada ao vetor a.\\
+         
+         \textbf{Multiplicador}\\
+        
+        Novamente à partir do métodos de aproveitamento de componentes iniciamos a construção do \textbf{multiplicador}. Dessa vez utiliza-se a soma, pois  a multiplicação é o resultado da soma de n parcelas. È importante ressaltar que o vetor resultado terá o dobro do tamanho dos vetores de entrada. Sendo assim, obseva-se a criação do Port Map do muller4 por meio da inserção de vetores de entradas de tamanho quatro e o vetores de saída de tamanho oito. \textbf{(Apêndice 7.5)} Além disso, têm a presença de dois outras saídas o carry out e o overflow.
+        
+        Durante a arquitetura o VHDL desta operação iniciamos por meio da criação de sinais que irão ser receptores do resultado da multiplicação realizada por ands (c00 a c03), portadores da soma dos carry (c10 a c13) ou ainda std\_logics para mapeamento com o Port Map do somador (restante) para finalmente resolução da operação. 
+
+
+    \subsection{Componentes}
+    
+    \subsubsection{Personificações e definições}
+    
+    \subsection*{Clock Reducer}
+   
+    Em virtude da utilização de 8 leds para demonstrar 3 entradas de 4 bits e 1 saida de 8 bits utilizamos a ideia de "rotacionar" a cada 2 segundos a exibição individual de entradas e saida.\\
+    
+    O Clock da placa será a entrada. Iniciamos a construção deste por meio da criação da porta de saída e entrada. (Apêndice [\ref{ap:7.7}]) O clock da placa é de 50MHz e, como utilizaremos ele como entrada para definir o tempo de exibição das entradas e dos resultados, será utilizado um contador modulo 100 milhões para reduzir o período para 2s.
+    \\
+    
+    \subsection*{Inserção dos valores de entrada}
+    Cada vez que o clock, já reduzido, dispara um evento e se apresenta em estado alto (1), pode ocorrer uma transição no diagrama de estados do sistema, dependendo dos botões que forem pressionados. Dessa forma, se pode definir quais são as entradas do sistema.
+        
+    \subsection*{Pinagem}
+    
+    Por meio do arquivo de descrição dos pinos temos a codificação destes. Primeiramente definimos a pinagem dos switches de entrada, os quais serão utilizadas para inserção dos valores na placa. (apêndice 7.8) Além disso, também determinamos quais as leds que representarão a saída. Levando em consideração que devem ser oito, pois a multiplicação resulta em vetores de 8 bits. 
+    
+    Atribui-se os botões para realização de troca de qualquer um dos números inseridos. A escolha destes foi intuitiva de forma que que o btn\_a seleciona o primeiro número e o btn\_b o segundo
+    
+    %PRECISAMOS COMPLETAR ESSA PARTE DE ACORDO COM O TÉRMINO DA PARTE DO CONTADOR QUE DETERMINA QUAL BOTÃO SELECIONA O QUE
+    
+    
+    
+    \subsubsection{Integrações}
+    
+%aqui tem que falar sobre a árvore e como funciona o processo de topagem
+
+%Aém disso é bom colocar legenda na imagem
+
+\begin{figure}[H] % Esse H faz com que a figura fique exatamente no lugar onde aparece no codigo
+    \centering
+    \includegraphics[height=240pt]{./PrintsCodigos/ArvoreeHierarquia.png}
+    \caption{Legenda} Arvore que demonstra hierarquia de Módulos e componentes. Demonstra claramente o uso de pequenos módulos para a construção de um modulo maior
+\end{figure}
+    
+    \subsection*{Alu - Aritmética}
+    
+    À partir de todas as componentes criadas (multiplicação, soma, subtração e complemento de 2) foi realizada uma integração dessas funções. A ALU aritmética tem como Port Map duas entradas, uma saída, um operador que selecionará a função a ser realizada, um carry out e um overflow. (Apêndice [\ref{ap:7.6}]) 
+    
+    Desta forma determinamos cases para o operador e de acordo com este, temos signals específicos para a saída assumir. O mapeamos das operações se baseia basicamente no direcionamento das entradas do Alu Aritmética para cada um especificamente e retornar seus respectivos valores valores para os sinais correspondentes citados anteriormente.\\
+   
+    \subsection*{Alu - Integração Lógica e Aritmética}
+    
+    Da mesma forma que fizemos anteriormente foi realizado para a integração da parte lógica e aritmética. Levando em consideração que operadores iniciador por \texttt{01} foram submetidos para a parte aritmética e os operadores iniciados por \texttt{00} para a parte lógica. (Apêndice [\ref{ap:7.9}])\\
+    
+    \subsection*{Alu -Integração com clock e contador}
+    
+
+\section{Resultados}
+ Os resultados foram comprovados por simulações da AluFull( Alu Logic + Alu Ariti ) e por testes diretamente na placa para a visualização do tempo de exibição, pinagem, e a maquina de estados.\\
+ 
+ Realizou-se inicialmente a simulação da Parte lógica utilizando-se os números 10101 e 0101. Os operadores utilizados foram 0000 para and, 0001 para or, 0010 para not e 0011 para xor. O resultados aparecem respectivamente e em ordem (Apêndice [\ref{ap:7.1}]) 0101, 1111, 0101 (not de a) e 1111. Sendo os outros 4 bits não utilizados colocados em zero.
+
+ Para realizar a simulação da adição foi utilizado o teste de 1010+0101 , encontrando desta forma o resultado 0101 que consta na tela (Apêndice \ref{ap:7.2}). Levando em consideração que o operador correspondente a essa expressão é o 0100.\\
+ 
+  A simulação da complemento de 2 foi realizada utilizando o teste de Complemento de 2 (1010) , encontrando desta forma o resultado 1101 (Apêndice \ref{ap:7.3}). O operador atribuído para essa expressão foi o 0111.\\
+  
+   A operação de subtração foi realizada utilizando o teste de 1010-0101 , encontrando desta forma o resultado 0101 que consta na tela (Apêndice \ref{ap:7.4}). Temos como operador para essa expressão 0101\\
+   
+    Finalmente o teste para a operação da multiplicação, cujo o operador é 0110, foi realizado através dos números 1010*0101 , encontrando desta forma o resultado 00110010(Apêndice \ref{ap:7.5)}. \\
+
+%Simulações e discussão sobre os resultados encontrados
+
+%Tem que númerar as figuras e referenciar no texto
+
+\section{Conclusões}
+    A partir do escopo do projeto, decidimos começar pelas pequenas partes(Módulos). Iniciamos pelas operações aritméticas: Adição, Complemento de 2, Subtração, Multiplicação. Isso permitiu que reutilizássemos os módulos anteriores para gerar o próximo tornando tudo muito mais fácil.
+    \newline
+    Ademais, a produção da \textbf{ULA} foi separada em 4 pequenos módulos: Logica, Aritmética, Full e Main. Desta forma podemos testar os componentes de cada modulo para gerar o modulo maior, e, assim, unir os módulos maiores (Full= Logica(Operações Logicas) + Aritmética)(Main=AluFull + Contador + Clock Reducer + Pinagem).
+    \newline
+    Portanto, o projeto se mostrou interessante por trabalhar os conceitos de sistemas digitais com boas praticas de programação. A utilização desses paradigmas de permitiu que a solução de problemas encontrados durante o projeto fossem corrigidos e identificados de uma maneira mais assertiva e fácil. 
+    
+    
+\section{Refer\^{e}ncias}
+
+ \url{http://aleph0.info/cursos/sd/2018-q2/MCTA024\_Aula09\_ULA\_2017-2a.pdf}
+
+\section{Apêndices}
+
+\subsection{ ALU - Parte Lógica\newline} \label{ap:7.1}
+
+\begin{figure}[H] % Esse H faz com que a figura fique exatamente no lugar onde aparece no codigo
+    \centering
+    \includegraphics[width=\textwidth]{./PrintsSimu/And.png}
+\end{figure}
+\begin{figure}[H] % Esse H faz com que a figura fique exatamente no lugar onde aparece no codigo
+    \centering
+    \includegraphics[width=\textwidth]{./PrintsSimu/Or.png}
+\end{figure}
+\begin{figure}[H] % Esse H faz com que a figura fique exatamente no lugar onde aparece no codigo
+    \includegraphics[width=\textwidth]{./PrintsSimu/NotA.png}
+\end{figure}
+\begin{figure}[H] % Esse H faz com que a figura fique exatamente no lugar onde aparece no codigo
+    \includegraphics[width=\textwidth]{./PrintsSimu/Xor.png}
+\end{figure}
+
+\inputminted{vhdl}{./.vhdl/logic.vhdl}
+
+\subsection{ Somador\newline} \label{ap:7.2}
+\begin{figure}[H] % Esse H faz com que a figura fique exatamente no lugar onde aparece no codigo
+    \includegraphics[width=\textwidth]{./PrintsSimu/AddSimu.jpg}
+\end{figure}
+\inputminted{vhdl}{./.vhdl/add.vhdl}
+
+\subsection{ Complemento de 2\newline} \label{ap:7.3}
+\begin{figure}[H] % Esse H faz com que a figura fique exatamente no lugar onde aparece no codigo
+    \centering
+    \includegraphics[width=\textwidth]{./PrintsSimu/Comp2.png}
+\end{figure}
+\inputminted{vhdl}{./.vhdl/comp2.vhdl}
+
+
+
+\subsection{ Subtrator\newline} \label{ap:7.4}
+\begin{figure}[H] % Esse H faz com que a figura fique exatamente no lugar onde aparece no codigo
+    \centering
+    \includegraphics[width=\textwidth]{./PrintsSimu/SubSimu.png}
+\end{figure}
+\inputminted{vhdl}{./.vhdl/sub.vhdl}
+
+
+
+\subsection{ Multiplicador\newline} \label{ap:7.5}
+\begin{figure}[H] % Esse H faz com que a figura fique exatamente no lugar onde aparece no codigo
+    \centering
+    \includegraphics[width=\textwidth]{./PrintsSimu/MultSimu.jpg}
+\end{figure}
+\inputminted{vhdl}{./.vhdl/muller4.vhdl}
+
+
+
+\subsection{ Parte Aritmética\newline} \label{ap:7.6}
+
+\inputminted{vhdl}{./.vhdl/aritm.vhdl}
+
+\subsection{ Clock\newline}  \label{ap:7.7}
+
+\inputminted{vhdl}{./.vhdl/clock.vhdl}
+
+\subsection{ Pinagem\newline}  \label{ap:7.8}
+
+\inputminted{vhdl}{./.vhdl/pin.vhdl}
+
+\subsection{ ALU - Integração parte lógica e aritmética\newline}  \label{ap:7.9}
+
+\inputminted{vhdl}{./.vhdl/alufull.vhdl}
+
+\subsection{ ALU - Completa\newline}  \label{ap:7.10}
+
+\inputminted{vhdl}{./.vhdl/alumain.vhdl}
+
+\end{document}
+
+
+
