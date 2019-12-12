@@ -1,5 +1,7 @@
 vhdl work "SomaBloco.vhd"
 vhdl work "MultiplicaBloco.vhd"
 vhdl work "MultiplicaSetor.vhd"
+vhdl work "Somador.vhd"
 vhdl work "Multiplicador.vhd"
-vhdl work "teste_multiplicador.vhd"
+vhdl work "ula.vhd"
+vhdl work "ula_teste.vhd"

@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/pedro/Desktop/FPGA2-true/FPGA2/teste_multiplicador_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/pedro/Desktop/FPGA2-true/FPGA2/teste_multiplicador_isim_beh.wdb 
+Running: /home/pedro/Desktop/FPGA2-true/FPGA2/test_ula_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/pedro/Desktop/FPGA2-true/FPGA2/test_ula_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -27,6 +27,6 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /teste_multiplicador/uut/MS0/Soma0/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /test_ula/uut/Soma/Soma0/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 Finished circuit initialization process.
 # exit 0

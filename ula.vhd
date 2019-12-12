@@ -33,8 +33,7 @@ entity Ula is
 	Port ( A : in  STD_LOGIC_VECTOR(15 DOWNTO 0);
 			 B : in  STD_LOGIC_VECTOR(15 DOWNTO 0);
 			 OP : in STD_LOGIC;
-          C : out  STD_LOGIC_VECTOR(31 DOWNTO 0);
-			 cout : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+          C : out  STD_LOGIC_VECTOR(31 DOWNTO 0)
 			 );
 end Ula;
 
