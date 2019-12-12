@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-12-12T10:55:09</DateModified>
+  <DateModified>2019-12-12T12:00:33</DateModified>
   <ModuleName>MultiplicaBloco</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/pedro/Desktop/FPGA2-true/FPGA2/iseconfig/MultiplicaBloco.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/pedro/Desktop/FPGA2-true/FPGA2/</ImplementationReportsDirectory>
+  <SavedFilePath>/home/pedro/EEL480-Sistemas-Digitais/iseconfig/MultiplicaBloco.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/pedro/EEL480-Sistemas-Digitais/</ImplementationReportsDirectory>
   <DateInitialized>2019-12-07T09:39:20</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
