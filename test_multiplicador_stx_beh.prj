@@ -1,0 +1,4 @@
+vhdl isim_temp "SomaBloco.vhd"
+vhdl isim_temp "MultiplicaBloco.vhd"
+vhdl isim_temp "Multiplicador.vhd"
+vhdl isim_temp "test_multiplicador.vhd"

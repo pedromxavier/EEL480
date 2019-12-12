@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/pedro/Desktop/FPGA2-true/FPGA2/teste_multiplicador_isim_beh.exe" -prj "/home/pedro/Desktop/FPGA2-true/FPGA2/teste_multiplicador_beh.prj" "work.teste_multiplicador" 

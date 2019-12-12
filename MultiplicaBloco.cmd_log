@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "/home/sd/Desktop/FPGA2/MultiplicaBloco.xst" -ofn "/home/sd/Desktop/FPGA2/MultiplicaBloco.syr" 
+xst -intstyle ise -ifn "/home/sd/Desktop/FPGA2/MultiplicaBloco.xst" -ofn "/home/sd/Desktop/FPGA2/MultiplicaBloco.syr" 
+xst -intstyle ise -ifn "/home/sd/Desktop/FPGA2/MultiplicaBloco.xst" -ofn "/home/sd/Desktop/FPGA2/MultiplicaBloco.syr" 
+xst -intstyle ise -ifn "/home/sd/Desktop/FPGA2/MultiplicaBloco.xst" -ofn "/home/sd/Desktop/FPGA2/MultiplicaBloco.syr" 
+xst -intstyle ise -ifn "/home/sd/Desktop/FPGA2/MultiplicaBloco.xst" -ofn "/home/sd/Desktop/FPGA2/MultiplicaBloco.syr" 

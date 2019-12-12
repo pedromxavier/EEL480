@@ -1,0 +1,3 @@
+vhdl work "SomaBloco.vhd"
+vhdl work "MultiplicaBloco.vhd"
+vhdl work "Multiplicador.vhd"
