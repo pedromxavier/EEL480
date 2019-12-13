@@ -48,7 +48,15 @@ architecture Behavioral of lcd is
 ------------------------------------------------------------------
 --  Component Declarations
 ------------------------------------------------------------------
-
+	component kb_code is
+		port (
+			clk, reset   : in  std_logic;
+			ps2d, ps2c   : in  std_logic;
+			rd_key_code  : in  std_logic;
+			number_code  : out std_logic_vector(7 downto 0);
+			kb_buf_empty : out std_logic
+		);
+	end component;
 ------------------------------------------------------------------
 --  Local Type Declarations
 -----------------------------------------------------------------
