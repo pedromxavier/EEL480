@@ -4,3 +4,5 @@ xst -intstyle ise -ifn "/home/sd/Desktop/FPGA2/SomaBloco.xst" -ofn "/home/sd/Des
 xst -intstyle ise -ifn "/home/sd/Desktop/FPGA2/SomaBloco.xst" -ofn "/home/sd/Desktop/FPGA2/SomaBloco.syr" 
 xst -intstyle ise -ifn "/home/sd/Desktop/FPGA2/SomaBloco.xst" -ofn "/home/sd/Desktop/FPGA2/SomaBloco.syr" 
 xst -intstyle ise -ifn "/home/sd/Desktop/FPGA2/SomaBloco.xst" -ofn "/home/sd/Desktop/FPGA2/SomaBloco.syr" 
+xst -intstyle ise -ifn "/home/pedro/EEL480-Sistemas-Digitais/SomaBloco.xst" -ofn "/home/pedro/EEL480-Sistemas-Digitais/SomaBloco.syr" 
+xst -intstyle ise -ifn "/home/pedro/EEL480-Sistemas-Digitais/SomaBloco.xst" -ofn "/home/pedro/EEL480-Sistemas-Digitais/SomaBloco.syr" 

@@ -2,15 +2,15 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   14:59:49 12/07/2019
+-- Create Date:   20:26:00 12/12/2019
 -- Design Name:   
--- Module Name:   /home/pedro/Desktop/FPGA2-true/FPGA2/teste_multiplicador.vhd
+-- Module Name:   /home/pedro/EEL480-Sistemas-Digitais/tesst_multblock.vhd
 -- Project Name:  FPGA
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
 -- 
--- VHDL Test Bench Created by ISE for module: Multiplicador
+-- VHDL Test Bench Created by ISE for module: MultiplicaBloco
 -- 
 -- Dependencies:
 -- 
@@ -32,39 +32,39 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY teste_multiplicador IS
-END teste_multiplicador;
+ENTITY tesst_multblock IS
+END tesst_multblock;
  
-ARCHITECTURE behavior OF teste_multiplicador IS 
+ARCHITECTURE behavior OF tesst_multblock IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT Multiplicador
+    COMPONENT MultiplicaBloco
     PORT(
-         A : IN  std_logic_vector(15 downto 0);
-         B : IN  std_logic_vector(15 downto 0);
-         C : OUT  std_logic_vector(31 downto 0)
+         A : IN  std_logic_vector(3 downto 0);
+         B : IN  std_logic_vector(3 downto 0);
+         C : OUT  std_logic_vector(7 downto 0)
         );
     END COMPONENT;
     
 
    --Inputs
-   signal A : std_logic_vector(15 downto 0) := (others => '0');
-   signal B : std_logic_vector(15 downto 0) := (others => '0');
+   signal A : std_logic_vector(3 downto 0) := (others => '0');
+   signal B : std_logic_vector(3 downto 0) := (others => '0');
 
  	--Outputs
-   signal C : std_logic_vector(31 downto 0);
+   signal C : std_logic_vector(7 downto 0);
    -- No clocks detected in port list. Replace clock below with 
    -- appropriate port name 
  
    constant clock_period : time := 10 ns;
- 
-	signal clock : std_logic;
 	
+	signal clock : std_logic;
+ 
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: Multiplicador PORT MAP (
+   uut: MultiplicaBloco PORT MAP (
           A => A,
           B => B,
           C => C
@@ -88,11 +88,11 @@ BEGIN
 
       wait for clock_period*10;
 
-      -- insert stimulus here 
+      -- insert stimulus here
 		
-			A <= "0001100110011001"; -- 1999
-			B <= "0001100110011001"; -- 1999
-
+		A <= "1000";
+		B <= "1000";
+		
       wait;
    end process;
 

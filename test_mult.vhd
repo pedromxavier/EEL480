@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   14:59:49 12/07/2019
+-- Create Date:   20:17:51 12/12/2019
 -- Design Name:   
--- Module Name:   /home/pedro/Desktop/FPGA2-true/FPGA2/teste_multiplicador.vhd
+-- Module Name:   /home/pedro/EEL480-Sistemas-Digitais/test_mult.vhd
 -- Project Name:  FPGA
 -- Target Device:  
 -- Tool versions:  
@@ -32,10 +32,10 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY teste_multiplicador IS
-END teste_multiplicador;
+ENTITY test_mult IS
+END test_mult;
  
-ARCHITECTURE behavior OF teste_multiplicador IS 
+ARCHITECTURE behavior OF test_mult IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
@@ -58,9 +58,7 @@ ARCHITECTURE behavior OF teste_multiplicador IS
    -- appropriate port name 
  
    constant clock_period : time := 10 ns;
- 
 	signal clock : std_logic;
-	
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
@@ -89,10 +87,8 @@ BEGIN
       wait for clock_period*10;
 
       -- insert stimulus here 
-		
-			A <= "0001100110011001"; -- 1999
-			B <= "0001100110011001"; -- 1999
-
+		A <= "1000100010001000"; -- 9999
+		B <= "1000100010001000"; -- 9999
       wait;
    end process;
 

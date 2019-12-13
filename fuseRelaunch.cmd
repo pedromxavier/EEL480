@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/pedro/Desktop/FPGA2-true/FPGA2/test_ula_isim_beh.exe" -prj "/home/pedro/Desktop/FPGA2-true/FPGA2/test_ula_beh.prj" "work.test_ula" 
+-intstyle "ise" -incremental -lib "secureip" -o "/home/pedro/EEL480-Sistemas-Digitais/test_multsetor_isim_beh.exe" -prj "/home/pedro/EEL480-Sistemas-Digitais/test_multsetor_beh.prj" "work.test_multsetor" 

@@ -1,5 +1,6 @@
 ISim log file
-Running: /home/pedro/Desktop/FPGA2-true/FPGA2/test_ula_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/pedro/Desktop/FPGA2-true/FPGA2/test_ula_isim_beh.wdb 
+Running: /home/pedro/EEL480-Sistemas-Digitais/test_multsetor_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/pedro/EEL480-Sistemas-Digitais/test_multsetor_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -14,7 +15,7 @@ ERROR:Security:14 - No feature was available for 'ISIM'.
 
 No such feature exists.
 Feature:       ISIM
-License path:  /home/pedro/.Xilinx:/opt/Xilinx/14.7/ISE_DS/ISE//data/*.lic:/opt/Xilinx/14.7/ISE_DS/ISE//coregen/core_licenses/Xilinx.lic:/opt/Xilinx/14.7/ISE_DS/ISE//coregen/core_licenses/XilinxFree.lic:
+License path:  /home/pedro/.Xilinx/*.lic:/opt/Xilinx/14.7/ISE_DS/ISE//data/*.lic:/opt/Xilinx/14.7/ISE_DS/ISE//coregen/core_licenses/Xilinx.lic:/opt/Xilinx/14.7/ISE_DS/ISE//coregen/core_licenses/XilinxFree.lic:
 FLEXnet Licensing error:-5,357
 For further information, refer to the FLEXnet Licensing documentation,
 available at "www.flexerasoftware.com".
@@ -27,6 +28,7 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /test_ula/uut/Soma/Soma0/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /test_multsetor/uut/Soma0/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 Finished circuit initialization process.
+# exit 0
 # exit 0

@@ -19,3 +19,5 @@ xst -intstyle ise -ifn "/home/sd/Desktop/FPGA2/Somador.xst" -ofn "/home/sd/Deskt
 xst -intstyle ise -ifn "/home/sd/Desktop/FPGA2/Somador.xst" -ofn "/home/sd/Desktop/FPGA2/Somador.syr" 
 xst -intstyle ise -ifn "/home/sd/Desktop/FPGA2/Somador.xst" -ofn "/home/sd/Desktop/FPGA2/Somador.syr" 
 xst -intstyle ise -ifn "/home/sd/Desktop/FPGA2/Somador.xst" -ofn "/home/sd/Desktop/FPGA2/Somador.syr" 
+xst -intstyle ise -ifn "/home/pedro/EEL480-Sistemas-Digitais/Somador.xst" -ofn "/home/pedro/EEL480-Sistemas-Digitais/Somador.syr" 
+xst -intstyle ise -ifn "/home/pedro/EEL480-Sistemas-Digitais/Somador.xst" -ofn "/home/pedro/EEL480-Sistemas-Digitais/Somador.syr" 

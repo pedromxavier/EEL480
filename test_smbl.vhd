@@ -2,15 +2,15 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   14:59:49 12/07/2019
+-- Create Date:   19:10:01 12/12/2019
 -- Design Name:   
--- Module Name:   /home/pedro/Desktop/FPGA2-true/FPGA2/teste_multiplicador.vhd
+-- Module Name:   /home/pedro/EEL480-Sistemas-Digitais/test_smbl.vhd
 -- Project Name:  FPGA
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
 -- 
--- VHDL Test Bench Created by ISE for module: Multiplicador
+-- VHDL Test Bench Created by ISE for module: SomaBloco
 -- 
 -- Dependencies:
 -- 
@@ -32,41 +32,47 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY teste_multiplicador IS
-END teste_multiplicador;
+ENTITY test_smbl IS
+END test_smbl;
  
-ARCHITECTURE behavior OF teste_multiplicador IS 
+ARCHITECTURE behavior OF test_smbl IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT Multiplicador
+    COMPONENT SomaBloco
     PORT(
-         A : IN  std_logic_vector(15 downto 0);
-         B : IN  std_logic_vector(15 downto 0);
-         C : OUT  std_logic_vector(31 downto 0)
+         A : IN  std_logic_vector(3 downto 0);
+         B : IN  std_logic_vector(3 downto 0);
+         cin : IN  std_logic_vector(3 downto 0);
+         cout : OUT  std_logic_vector(3 downto 0);
+         C : OUT  std_logic_vector(3 downto 0)
         );
     END COMPONENT;
     
 
    --Inputs
-   signal A : std_logic_vector(15 downto 0) := (others => '0');
-   signal B : std_logic_vector(15 downto 0) := (others => '0');
+   signal A : std_logic_vector(3 downto 0) := (others => '0');
+   signal B : std_logic_vector(3 downto 0) := (others => '0');
+   signal cin : std_logic_vector(3 downto 0) := (others => '0');
 
  	--Outputs
-   signal C : std_logic_vector(31 downto 0);
+   signal cout : std_logic_vector(3 downto 0);
+   signal C : std_logic_vector(3 downto 0);
    -- No clocks detected in port list. Replace clock below with 
    -- appropriate port name 
  
    constant clock_period : time := 10 ns;
- 
-	signal clock : std_logic;
 	
+	signal clock : std_logic;
+ 
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: Multiplicador PORT MAP (
+   uut: SomaBloco PORT MAP (
           A => A,
           B => B,
+          cin => cin,
+          cout => cout,
           C => C
         );
 
@@ -88,10 +94,11 @@ BEGIN
 
       wait for clock_period*10;
 
-      -- insert stimulus here 
+      -- insert stimulus here
 		
-			A <= "0001100110011001"; -- 1999
-			B <= "0001100110011001"; -- 1999
+		A <= "0110";
+		B <= "0110";
+		cin <= "0111";
 
       wait;
    end process;

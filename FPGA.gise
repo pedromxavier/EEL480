@@ -31,18 +31,25 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="MultiplicaBloco.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MultiplicaBloco.xst"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MultiplicaBloco_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Multiplicador.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Multiplicador.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Multiplicador.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Multiplicador.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Multiplicador.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Multiplicador.ngr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Multiplicador.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Multiplicador.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Multiplicador.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Multiplicador.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Multiplicador_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Multiplicador_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Multiplicador_envsettings.html"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Multiplicador_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Multiplicador_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Multiplicador_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Multiplicador_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Multiplicador_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Multiplicador_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Multiplicador_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Multiplicador_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Multiplicador_xst.xrpt"/>
     <file xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Size.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Size.cmd_log"/>
@@ -87,6 +94,15 @@
     <file xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TESTE_MOD3_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TESTE_MOD3_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TESTE_MOD3_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Ula.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Ula.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Ula.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Ula.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Ula.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Ula.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Ula.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Ula.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Ula_xst.xrpt"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
@@ -95,11 +111,15 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tesst_multblock_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tesst_multblock_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_mul_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_mul_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_multblock_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_mult_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_mult_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="test_mult_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_mult_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_multblock_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="test_multblock_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_multblock_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_multbloco_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_multbloco_isim_beh.exe"/>
@@ -107,7 +127,14 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_multbloco_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_multiplicador_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_multiplicador_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_multset_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_multset_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_multsetor_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_smbl_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_smbl_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_somabloco_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_somabloco_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="test_somabloco_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_somabloco_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_somador_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_somador_stx_beh.prj"/>
@@ -115,10 +142,16 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_ula_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="test_ula_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_ula_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="teste_multiplicador_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="teste_multiplicador_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="teste_multiplicador_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="teste_multiplicador_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="teste_setor_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="teste_setor_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tmul_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tmul_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tmul_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tmul_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ula_teste_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ula_teste_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ula_teste_isim_beh.wdb"/>
@@ -130,56 +163,57 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1575035345" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1575035345">
+    <transform xil_pn:end_ts="1576192763" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1576192763">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1576161994" xil_pn:in_ck="8086085323164753106" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1576161994">
+    <transform xil_pn:end_ts="1576195730" xil_pn:in_ck="-2375230066598416649" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1576195730">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="MultiplicaBloco.vhd"/>
+      <outfile xil_pn:name="MultiplicaSetor.vhd"/>
+      <outfile xil_pn:name="Multiplicador.vhd"/>
+      <outfile xil_pn:name="SomaBloco.vhd"/>
+      <outfile xil_pn:name="Somador.vhd"/>
+      <outfile xil_pn:name="lcd.vhd"/>
+      <outfile xil_pn:name="test_mult.vhd"/>
+      <outfile xil_pn:name="test_multsetor.vhd"/>
+      <outfile xil_pn:name="test_ula.vhd"/>
+      <outfile xil_pn:name="teste_setor.vhd"/>
+      <outfile xil_pn:name="ula.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1576195212" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2508795179035465057" xil_pn:start_ts="1576195212">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1576195212" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7797003336607643903" xil_pn:start_ts="1576195212">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1576194256" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4445614030926868331" xil_pn:start_ts="1576194256">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1576195431" xil_pn:in_ck="-4575660455483727655" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1576195431">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputAdded"/>
       <outfile xil_pn:name="MultiplicaBloco.vhd"/>
       <outfile xil_pn:name="MultiplicaSetor.vhd"/>
       <outfile xil_pn:name="Multiplicador.vhd"/>
       <outfile xil_pn:name="SomaBloco.vhd"/>
       <outfile xil_pn:name="Somador.vhd"/>
-      <outfile xil_pn:name="test_multblock.vhd"/>
-      <outfile xil_pn:name="test_somador.vhd"/>
+      <outfile xil_pn:name="lcd.vhd"/>
+      <outfile xil_pn:name="test_mult.vhd"/>
       <outfile xil_pn:name="test_ula.vhd"/>
-      <outfile xil_pn:name="teste_multiplicador.vhd"/>
       <outfile xil_pn:name="teste_setor.vhd"/>
       <outfile xil_pn:name="ula.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1576161960" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2508795179035465057" xil_pn:start_ts="1576161960">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1576161960" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7797003336607643903" xil_pn:start_ts="1576161960">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1575044976" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4827254182007989258" xil_pn:start_ts="1575044976">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1576161997" xil_pn:in_ck="8086085323164753106" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1576161997">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="MultiplicaBloco.vhd"/>
-      <outfile xil_pn:name="MultiplicaSetor.vhd"/>
-      <outfile xil_pn:name="Multiplicador.vhd"/>
-      <outfile xil_pn:name="SomaBloco.vhd"/>
-      <outfile xil_pn:name="Somador.vhd"/>
-      <outfile xil_pn:name="test_multblock.vhd"/>
-      <outfile xil_pn:name="test_somador.vhd"/>
-      <outfile xil_pn:name="test_ula.vhd"/>
-      <outfile xil_pn:name="teste_multiplicador.vhd"/>
-      <outfile xil_pn:name="teste_setor.vhd"/>
-      <outfile xil_pn:name="ula.vhd"/>
-    </transform>
-    <transform xil_pn:end_ts="1576161998" xil_pn:in_ck="8086085323164753106" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="364668010477640168" xil_pn:start_ts="1576161997">
+    <transform xil_pn:end_ts="1576195433" xil_pn:in_ck="-4575660455483727655" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="364668010477640168" xil_pn:start_ts="1576195431">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
@@ -193,7 +227,7 @@
       <outfile xil_pn:name="test_ula_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1576161999" xil_pn:in_ck="6500758635616694143" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6734375030140314485" xil_pn:start_ts="1576161998">
+    <transform xil_pn:end_ts="1576195433" xil_pn:in_ck="-8863985597747478090" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6734375030140314485" xil_pn:start_ts="1576195433">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
@@ -208,49 +242,39 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1575046067" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6844174113361278834" xil_pn:start_ts="1575046067">
+    <transform xil_pn:end_ts="1576194759" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6509270702852381171" xil_pn:start_ts="1576194759">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1575046067" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4827254182007989258" xil_pn:start_ts="1575046067">
+    <transform xil_pn:end_ts="1576194759" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4445614030926868331" xil_pn:start_ts="1576194759">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1575046067" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1575046067">
+    <transform xil_pn:end_ts="1576194759" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1576194759">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1575046067" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3902090509388258480" xil_pn:start_ts="1575046067">
+    <transform xil_pn:end_ts="1576194759" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-2039404279047588049" xil_pn:start_ts="1576194759">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1575046067" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="3206529612922900429" xil_pn:start_ts="1575046067">
+    <transform xil_pn:end_ts="1576194759" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="3206529612922900429" xil_pn:start_ts="1576194759">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1575046067" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="5121797693051186304" xil_pn:start_ts="1575046067">
+    <transform xil_pn:end_ts="1576194759" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-2244667259525660129" xil_pn:start_ts="1576194759">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1575046131" xil_pn:in_ck="2355014808181586224" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="323684623673653427" xil_pn:start_ts="1575046116">
+    <transform xil_pn:end_ts="1576195028" xil_pn:in_ck="6070054599260342198" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="4163163175566396786" xil_pn:start_ts="1576195016">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="MultiplicaBloco.lso"/>
-      <outfile xil_pn:name="MultiplicaBloco.ngc"/>
-      <outfile xil_pn:name="MultiplicaBloco.ngr"/>
-      <outfile xil_pn:name="MultiplicaBloco.prj"/>
-      <outfile xil_pn:name="MultiplicaBloco.stx"/>
-      <outfile xil_pn:name="MultiplicaBloco.syr"/>
-      <outfile xil_pn:name="MultiplicaBloco.xst"/>
-      <outfile xil_pn:name="MultiplicaBloco_xst.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1571404718" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6982193163691219981" xil_pn:start_ts="1571404718">
+    <transform xil_pn:end_ts="1576187897" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3326035729728760689" xil_pn:start_ts="1576187897">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>

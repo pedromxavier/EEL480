@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: SomaBloco.prj
@@ -108,7 +108,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/home/sd/Desktop/FPGA2/SomaBloco.vhd" into library work
+Parsing VHDL file "/home/pedro/EEL480-Sistemas-Digitais/SomaBloco.vhd" into library work
 Parsing entity <SomaBloco>.
 Parsing architecture <Behavioral> of entity <somabloco>.
 
@@ -123,28 +123,31 @@ Elaborating entity <SomaBloco> (architecture <Behavioral>) from library <work>.
 =========================================================================
 
 Synthesizing Unit <SomaBloco>.
-    Related source file is "/home/sd/Desktop/FPGA2/SomaBloco.vhd".
-    Found 5-bit adder for signal <n0031> created at line 57.
+    Related source file is "/home/pedro/EEL480-Sistemas-Digitais/SomaBloco.vhd".
+    Found 5-bit adder for signal <n0041> created at line 57.
     Found 5-bit adder for signal <C1> created at line 57.
-    Found 5-bit subtractor for signal <GND_5_o_GND_5_o_sub_7_OUT<4:0>> created at line 62.
-    Found 5-bit comparator greater for signal <GND_5_o_C1[4]_LessThan_6_o> created at line 61
+    Found 5-bit subtractor for signal <GND_5_o_GND_5_o_sub_8_OUT<4:0>> created at line 62.
+    Found 5-bit subtractor for signal <GND_5_o_GND_5_o_sub_10_OUT<4:0>> created at line 65.
+    Found 5-bit comparator greater for signal <C1[4]_PWR_5_o_LessThan_6_o> created at line 61
+    Found 5-bit comparator greater for signal <GND_5_o_C1[4]_LessThan_7_o> created at line 61
+    Found 5-bit comparator greater for signal <PWR_5_o_C1[4]_LessThan_9_o> created at line 64
     Summary:
-	inferred   3 Adder/Subtractor(s).
-	inferred   1 Comparator(s).
-	inferred   1 Multiplexer(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+	inferred   3 Multiplexer(s).
 Unit <SomaBloco> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 3
+# Adders/Subtractors                                   : 4
  5-bit adder                                           : 2
- 5-bit subtractor                                      : 1
-# Comparators                                          : 1
- 5-bit comparator greater                              : 1
-# Multiplexers                                         : 1
- 5-bit 2-to-1 multiplexer                              : 1
+ 5-bit subtractor                                      : 2
+# Comparators                                          : 3
+ 5-bit comparator greater                              : 3
+# Multiplexers                                         : 3
+ 5-bit 2-to-1 multiplexer                              : 3
 
 =========================================================================
 
@@ -157,13 +160,13 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 3
+# Adders/Subtractors                                   : 4
  5-bit adder                                           : 2
- 5-bit subtractor                                      : 1
-# Comparators                                          : 1
- 5-bit comparator greater                              : 1
-# Multiplexers                                         : 1
- 5-bit 2-to-1 multiplexer                              : 1
+ 5-bit subtractor                                      : 2
+# Comparators                                          : 3
+ 5-bit comparator greater                              : 3
+# Multiplexers                                         : 3
+ 5-bit 2-to-1 multiplexer                              : 3
 
 =========================================================================
 
@@ -204,11 +207,11 @@ Top Level Output File Name         : SomaBloco.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 14
+# BELS                             : 15
 #      GND                         : 1
-#      LUT3                        : 5
+#      LUT3                        : 4
 #      LUT5                        : 4
-#      LUT6                        : 4
+#      LUT6                        : 6
 # IO Buffers                       : 20
 #      IBUF                        : 12
 #      OBUF                        : 8
@@ -220,14 +223,14 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                   13  out of  63400     0%  
-    Number used as Logic:                13  out of  63400     0%  
+ Number of Slice LUTs:                   14  out of  63400     0%  
+    Number used as Logic:                14  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     13
-   Number with an unused Flip Flop:      13  out of     13   100%  
-   Number with an unused LUT:             0  out of     13     0%  
-   Number of fully used LUT-FF pairs:     0  out of     13     0%  
+ Number of LUT Flip Flop pairs used:     14
+   Number with an unused Flip Flop:      14  out of     14   100%  
+   Number with an unused LUT:             0  out of     14     0%  
+   Number of fully used LUT-FF pairs:     0  out of     14     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
@@ -267,7 +270,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 3.024ns
+   Maximum combinational path delay: 2.894ns
 
 Timing Details:
 ---------------
@@ -275,25 +278,25 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 177 / 5
+  Total number of paths / destination ports: 297 / 6
 -------------------------------------------------------------------------
-Delay:               3.024ns (Levels of Logic = 6)
-  Source:            A<2> (PAD)
-  Destination:       C<1> (PAD)
+Delay:               2.894ns (Levels of Logic = 6)
+  Source:            B<1> (PAD)
+  Destination:       cout<0> (PAD)
 
-  Data Path: A<2> to C<1>
+  Data Path: B<1> to cout<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   0.001   0.703  A_2_IBUF (A_2_IBUF)
-     LUT6:I0->O            3   0.097   0.703  Madd_C1_lut<0>21 (Madd_C1_lut<0>2)
-     LUT6:I0->O            2   0.097   0.561  Madd_C1_cy<0>31 (Madd_C1_cy<0>2)
-     LUT5:I1->O            3   0.097   0.389  cout<0> (cout_0_OBUF)
-     LUT5:I3->O            1   0.097   0.279  Mmux_C021 (C_1_OBUF)
-     OBUF:I->O                 0.000          C_1_OBUF (C<1>)
+     IBUF:I->O             3   0.001   0.521  B_1_IBUF (B_1_IBUF)
+     LUT3:I0->O            1   0.097   0.693  Madd_C111 (Madd_C11)
+     LUT6:I0->O            2   0.097   0.299  Madd_C1_cy<0>31 (Madd_C1_cy<0>2)
+     LUT5:I4->O            5   0.097   0.712  Madd_C1_xor<0>41 (C1<3>)
+     LUT6:I0->O            1   0.097   0.279  Mmux_C041 (C_3_OBUF)
+     OBUF:I->O                 0.000          C_3_OBUF (C<3>)
     ----------------------------------------
-    Total                      3.024ns (0.389ns logic, 2.635ns route)
-                                       (12.9% logic, 87.1% route)
+    Total                      2.894ns (0.389ns logic, 2.505ns route)
+                                       (13.4% logic, 86.6% route)
 
 =========================================================================
 
@@ -303,13 +306,13 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 10.99 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.64 secs
  
 --> 
 
 
-Total memory usage is 593332 kilobytes
+Total memory usage is 506716 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

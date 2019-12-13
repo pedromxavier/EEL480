@@ -8,15 +8,19 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/Ula - Behavioral |home|pedro|Desktop|FPGA2-true|FPGA2|ula.vhd</ClosedNode>
+         <ClosedNode>/Ula - Behavioral |home|pedro|EEL480-Sistemas-Digitais|ula.vhd/Mult - Multiplicador - Behavioral/MS0 - MultiplicaSetor - Behavioral</ClosedNode>
+         <ClosedNode>/Ula - Behavioral |home|pedro|EEL480-Sistemas-Digitais|ula.vhd/Mult - Multiplicador - Behavioral/MS1 - MultiplicaSetor - Behavioral</ClosedNode>
+         <ClosedNode>/Ula - Behavioral |home|pedro|EEL480-Sistemas-Digitais|ula.vhd/Mult - Multiplicador - Behavioral/MS2 - MultiplicaSetor - Behavioral</ClosedNode>
+         <ClosedNode>/Ula - Behavioral |home|pedro|EEL480-Sistemas-Digitais|ula.vhd/Mult - Multiplicador - Behavioral/MS3 - MultiplicaSetor - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Ula - Behavioral (/home/pedro/Desktop/FPGA2-true/FPGA2/ula.vhd)</SelectedItem>
+         <SelectedItem>Mult - Multiplicador - Behavioral (/home/pedro/EEL480-Sistemas-Digitais/Multiplicador.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000eb000000020000000000000000000000000200000064ffffffff000000810000000300000002000000eb0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001d2000000020000000000000000000000000200000064ffffffff000000810000000300000002000001d20000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Ula - Behavioral (/home/pedro/Desktop/FPGA2-true/FPGA2/ula.vhd)</CurrentItem>
+      <CurrentItem>Mult - Multiplicador - Behavioral (/home/pedro/EEL480-Sistemas-Digitais/Multiplicador.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -50,7 +54,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000128000000010001000100000000000000000000000064ffffffff000000810000000000000001000001280000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000119000000010001000100000000000000000000000064ffffffff000000810000000000000001000001190000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
@@ -65,36 +69,48 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Synthesize - XST</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e5000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e50000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Synthesize - XST</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/TESTE_MOD3 - behavior |home|sd|Downloads|TESTE_MOD_MULT.vhd</ClosedNode>
          <ClosedNode>/test_mul - behavior |home|sd|Desktop|FPGA2|test_mul.vhd</ClosedNode>
+         <ClosedNode>/test_mult - behavior |home|pedro|EEL480-Sistemas-Digitais|test_mult.vhd</ClosedNode>
+         <ClosedNode>/test_mult - behavior |home|pedro|EEL480-Sistemas-Digitais|test_mult.vhd/uut - Multiplicador - Behavioral/MS1 - MultiplicaSetor - Behavioral</ClosedNode>
+         <ClosedNode>/test_mult - behavior |home|pedro|EEL480-Sistemas-Digitais|test_mult.vhd/uut - Multiplicador - Behavioral/MS2 - MultiplicaSetor - Behavioral</ClosedNode>
+         <ClosedNode>/test_mult - behavior |home|pedro|EEL480-Sistemas-Digitais|test_mult.vhd/uut - Multiplicador - Behavioral/MS3 - MultiplicaSetor - Behavioral</ClosedNode>
          <ClosedNode>/test_multblock - behavior |home|pedro|Desktop|FPGA2-true|FPGA2|test_multblock.vhd</ClosedNode>
+         <ClosedNode>/test_multblock - behavior |home|pedro|EEL480-Sistemas-Digitais|test_multblock.vhd</ClosedNode>
          <ClosedNode>/test_multblock - behavior |home|sd|Desktop|FPGA2|test_multblock.vhd</ClosedNode>
+         <ClosedNode>/test_smbl - behavior |home|pedro|EEL480-Sistemas-Digitais|test_smbl.vhd</ClosedNode>
          <ClosedNode>/test_somabloco - behavior |home|sd|Desktop|FPGA2|test_somabloco.vhd</ClosedNode>
          <ClosedNode>/test_somador - behavior |home|pedro|Desktop|FPGA2-true|FPGA2|test_somador.vhd</ClosedNode>
+         <ClosedNode>/test_somador - behavior |home|pedro|EEL480-Sistemas-Digitais|test_somador.vhd</ClosedNode>
+         <ClosedNode>/test_somador - behavior |home|pedro|EEL480-Sistemas-Digitais|test_somador.vhd/uut - Somador - Behavioral</ClosedNode>
          <ClosedNode>/test_somador - behavior |home|sd|Desktop|FPGA2|test_somador.vhd</ClosedNode>
          <ClosedNode>/test_somador - behavior |home|sd|Desktop|FPGA2|test_somador.vhd/uut - Somador - Behavioral</ClosedNode>
+         <ClosedNode>/test_ula - behavior |home|pedro|EEL480-Sistemas-Digitais|test_ula.vhd/uut - Ula - Behavioral/Mult - Multiplicador - Behavioral</ClosedNode>
+         <ClosedNode>/test_ula - behavior |home|pedro|EEL480-Sistemas-Digitais|test_ula.vhd/uut - Ula - Behavioral/Soma - Somador - Behavioral</ClosedNode>
          <ClosedNode>/teste_multiplicador - behavior |home|pedro|Desktop|FPGA2-true|FPGA2|teste_multiplicador.vhd</ClosedNode>
+         <ClosedNode>/teste_multiplicador - behavior |home|pedro|EEL480-Sistemas-Digitais|teste_multiplicador.vhd/uut - Multiplicador - Behavioral</ClosedNode>
          <ClosedNode>/teste_setor - behavior |home|pedro|Desktop|FPGA2-true|FPGA2|teste_setor.vhd</ClosedNode>
+         <ClosedNode>/teste_setor - behavior |home|pedro|EEL480-Sistemas-Digitais|teste_setor.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>test_ula - behavior (/home/pedro/Desktop/FPGA2-true/FPGA2/test_ula.vhd)</SelectedItem>
+         <SelectedItem>test_mult - behavior (/home/pedro/EEL480-Sistemas-Digitais/test_mult.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000208000000020000000000000000000000000200000064ffffffff000000810000000300000002000002080000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001b9000000020000000000000000000000000200000064ffffffff000000810000000300000002000001b90000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>test_ula - behavior (/home/pedro/Desktop/FPGA2-true/FPGA2/test_ula.vhd)</CurrentItem>
+      <CurrentItem>test_mult - behavior (/home/pedro/EEL480-Sistemas-Digitais/test_mult.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>

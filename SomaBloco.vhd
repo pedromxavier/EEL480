@@ -52,18 +52,21 @@ architecture Behavioral of SomaBloco is
 	begin
 		A0 <= '0' & A;
 		B0 <= '0' & B;
-		CIN0 <= '0' & CIN;
+		CIN0 <= '0' & cin;
 	
 		C1 <= A0 + B0 + CIN0;
 		
 		process(C1)
 			begin
-				if C1 > 9 then
-					C0 <= C1 - "01010";
-					COUT0 <= "00001";
-				else
+				if C1 < 10 then
 					C0 <= C1;
 					COUT0 <= "00000";
+				elsif C1 < 20 then
+					C0 <= C1 - "01010"; -- 10
+					COUT0 <= "00001";
+				else
+					C0 <= C1 - "10100"; -- 20
+					COUT0 <= "00010";
 				end if;
 		end process;
 		

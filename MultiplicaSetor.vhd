@@ -64,13 +64,12 @@ architecture Behavioral of MultiplicaSetor is
 		signal S2 : std_logic_vector(3 DOWNTO 0);
 		signal S3 : std_logic_vector(3 DOWNTO 0);
 		signal S4 : std_logic_vector(3 DOWNTO 0);
-		signal S5 : std_logic_vector(3 DOWNTO 0);
-		
-		
+		-----------------------------------------
 		signal C0 : std_logic_vector(3 DOWNTO 0);
 		signal C1 : std_logic_vector(3 DOWNTO 0);
 		signal C2 : std_logic_vector(3 DOWNTO 0);
 		signal C3 : std_logic_vector(3 DOWNTO 0);
+		signal C4 : std_logic_vector(3 DOWNTO 0);
 
 	begin
 	
@@ -127,13 +126,20 @@ architecture Behavioral of MultiplicaSetor is
 											cout => C3,
 											C => S3
 											);
+		Soma4: SomaBloco Port Map (
+											A => M3(7 DOWNTO 4),
+											B => "0000",
+											cin => C3,
+											cout => C4,
+											C => S4
+											);
 		------------------------------------------------
 		
 		C(3 DOWNTO 0) <= S0;
 		C(7 DOWNTO 4) <= S1;
 		C(11 DOWNTO 8) <= S2;
 		C(15 DOWNTO 12) <= S3;
-		C(19 DOWNTO 16) <= M3(7 DOWNTO 4);
+		C(19 DOWNTO 16) <= S4;
 	
 end Behavioral;
 

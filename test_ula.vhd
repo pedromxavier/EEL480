@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   11:45:33 12/12/2019
+-- Create Date:   20:58:47 12/12/2019
 -- Design Name:   
--- Module Name:   /home/pedro/Desktop/FPGA2-true/FPGA2/test_ula.vhd
+-- Module Name:   /home/pedro/EEL480-Sistemas-Digitais/test_ula.vhd
 -- Project Name:  FPGA
 -- Target Device:  
 -- Tool versions:  
@@ -60,9 +60,9 @@ ARCHITECTURE behavior OF test_ula IS
    -- appropriate port name 
  
    constant clock_period : time := 10 ns;
-	
-	signal clock : std_logic;
  
+	signal clock : std_logic;
+	
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
@@ -93,10 +93,11 @@ BEGIN
 
       -- insert stimulus here 
 
-		A <= "0001000100010001";
-		B <= "0001000100010001";
+		A <= "1000100010001000";
+		B <= "1000100010001000";
 		
-		OP <= '1'; -- mul
+		-- OP <= '0'; -- soma
+		OP <= '1'; -- mult
 
       wait;
    end process;

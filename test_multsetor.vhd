@@ -2,15 +2,15 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   14:59:49 12/07/2019
+-- Create Date:   21:06:37 12/12/2019
 -- Design Name:   
--- Module Name:   /home/pedro/Desktop/FPGA2-true/FPGA2/teste_multiplicador.vhd
+-- Module Name:   /home/pedro/EEL480-Sistemas-Digitais/test_multsetor.vhd
 -- Project Name:  FPGA
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
 -- 
--- VHDL Test Bench Created by ISE for module: Multiplicador
+-- VHDL Test Bench Created by ISE for module: MultiplicaSetor
 -- 
 -- Dependencies:
 -- 
@@ -32,39 +32,37 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY teste_multiplicador IS
-END teste_multiplicador;
+ENTITY test_multsetor IS
+END test_multsetor;
  
-ARCHITECTURE behavior OF teste_multiplicador IS 
+ARCHITECTURE behavior OF test_multsetor IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT Multiplicador
+    COMPONENT MultiplicaSetor
     PORT(
          A : IN  std_logic_vector(15 downto 0);
-         B : IN  std_logic_vector(15 downto 0);
-         C : OUT  std_logic_vector(31 downto 0)
+         B : IN  std_logic_vector(3 downto 0);
+         C : OUT  std_logic_vector(19 downto 0)
         );
     END COMPONENT;
     
 
    --Inputs
    signal A : std_logic_vector(15 downto 0) := (others => '0');
-   signal B : std_logic_vector(15 downto 0) := (others => '0');
+   signal B : std_logic_vector(3 downto 0) := (others => '0');
 
  	--Outputs
-   signal C : std_logic_vector(31 downto 0);
+   signal C : std_logic_vector(19 downto 0);
    -- No clocks detected in port list. Replace clock below with 
    -- appropriate port name 
  
    constant clock_period : time := 10 ns;
- 
-	signal clock : std_logic;
-	
+	signal clock : std_logic ;
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: Multiplicador PORT MAP (
+   uut: MultiplicaSetor PORT MAP (
           A => A,
           B => B,
           C => C
@@ -89,10 +87,8 @@ BEGIN
       wait for clock_period*10;
 
       -- insert stimulus here 
-		
-			A <= "0001100110011001"; -- 1999
-			B <= "0001100110011001"; -- 1999
-
+	A <= "1000100010001000" ;
+	B <= "1000";
       wait;
    end process;
 

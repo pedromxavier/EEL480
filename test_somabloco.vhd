@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   11:58:00 11/29/2019
+-- Create Date:   19:03:16 12/12/2019
 -- Design Name:   
--- Module Name:   /home/sd/Desktop/FPGA2/test_somabloco.vhd
+-- Module Name:   /home/pedro/EEL480-Sistemas-Digitais/test_somabloco.vhd
 -- Project Name:  FPGA
 -- Target Device:  
 -- Tool versions:  
@@ -41,23 +41,23 @@ ARCHITECTURE behavior OF test_somabloco IS
  
     COMPONENT SomaBloco
     PORT(
-         A : IN  std_logic_vector(4 downto 0);
-         B : IN  std_logic_vector(4 downto 0);
-         carryin : IN  std_logic_vector(4 downto 0);
-         carryout : OUT  std_logic_vector(4 downto 0);
-         soma : OUT  std_logic_vector(3 downto 0)
+         A : IN  std_logic_vector(3 downto 0);
+         B : IN  std_logic_vector(3 downto 0);
+         cin : IN  std_logic_vector(3 downto 0);
+         cout : OUT  std_logic_vector(3 downto 0);
+         C : OUT  std_logic_vector(3 downto 0)
         );
     END COMPONENT;
     
 
    --Inputs
-   signal A : std_logic_vector(4 downto 0) := (others => '0');
-   signal B : std_logic_vector(4 downto 0) := (others => '0');
-   signal carryin : std_logic_vector(4 downto 0) := (others => '0');
+   signal A : std_logic_vector(3 downto 0) := (others => '0');
+   signal B : std_logic_vector(3 downto 0) := (others => '0');
+   signal cin : std_logic_vector(3 downto 0) := (others => '0');
 
  	--Outputs
-   signal carryout : std_logic_vector(4 downto 0);
-   signal soma : std_logic_vector(4 downto 0);
+   signal cout : std_logic_vector(3 downto 0);
+   signal C : std_logic_vector(3 downto 0);
    -- No clocks detected in port list. Replace clock below with 
    -- appropriate port name 
  
@@ -71,9 +71,9 @@ BEGIN
    uut: SomaBloco PORT MAP (
           A => A,
           B => B,
-          carryin => carryin,
-          carryout => carryout,
-          soma => soma
+          cin => cin,
+          cout => cout,
+          C => C
         );
 
    -- Clock process definitions
@@ -96,8 +96,9 @@ BEGIN
 
       -- insert stimulus here
 		
-		A <= "01000";
-		B <= "01000";
+		A <= "1001";
+		b <= "1001";
+		cin <= "1001";
 
       wait;
    end process;
