@@ -27,18 +27,19 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 use ieee.numeric_std.all;
 
 entity lcd is
-    Port ( 	NUMERO: std_logic_vector(3 downto 0);
-				BOTAO: in std_logic;
-				LED: out std_logic;
-				LCD_DB: out std_logic_vector(7 downto 0);		--DB( 7 through 0)
-           RS:out std_logic;  				--WE
-           RW:out std_logic;				--ADR(0)
-	   CLK:in std_logic;				--GCLK2
-	   --ADR1:out std_logic;				--ADR(1)
-	   --ADR2:out std_logic;				--ADR(2)
-	   --CS:out std_logic;				--CSC
-	   OE:out std_logic;				--OE
-	   rst:in std_logic		);		--BTN
+    Port ( 	
+		NUMERO: in std_logic_vector(3 downto 0);
+		BOTAO: in std_logic;
+		LED: out std_logic;
+		LCD_DB: out std_logic_vector(7 downto 0);		--DB( 7 through 0)
+		RS:out std_logic;  				--WE
+		RW:out std_logic;				--ADR(0)
+		CLK:in std_logic;				--GCLK2
+		--ADR1:out std_logic;				--ADR(1)
+		--ADR2:out std_logic;				--ADR(2)
+		--CS:out std_logic;				--CSC
+		OE:out std_logic;				--OE
+		rst:in std_logic		);		--BTN
 	   --rdone: out std_logic);			--WriteDone output to work with DI05 test
 end lcd;
 
