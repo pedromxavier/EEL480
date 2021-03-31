@@ -1,3 +1,1 @@
-# EEL480-Sistemas-Digitais
-
-## Aulas Práticas
+# EEL480 Sistemas-Digitais (_Digital Systems_) @ ECI-UFRJ
